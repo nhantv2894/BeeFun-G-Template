@@ -1,0 +1,60 @@
+@import "base"
+/***************** RESPONDSIVE *****************/
+
+/******** TABLET ********/
+
+/******** MOBILE ********/
+@media (max-width: 768px)
+  .head-normal
+    display: none
+  .head-res
+    display: block
+  .up-bar
+    height: 35px
+  .top-bar
+    height: 50px
+  #logo
+    width: 75px
+    margin: 0 auto
+    display: block
+  #res-menu
+    display: block
+    cursor: hand
+    i
+      color: $yellow
+      padding-right: 10px
+      padding-top: 5px
+  .menu
+    position: inherit
+    top: 0px
+    padding: 20px 0px
+    border-right: 1px solid $yellow
+    border-left: 1px solid $yellow
+    li.li-active
+      width: auto
+      float: none
+      margin-bottom: 5px
+      a
+        float: none
+    li.li-normal
+      width: auto
+      float: none
+      margin-bottom: 5px
+      background: $lBlack
+      a
+        float: none
+        margin-right: 20px
+        text-align: right
+      &:hover
+        a
+          margin-right: 20px
+          transform: none
+  .left-side
+    padding-left: 0px
+    float: none
+    padding-top: 10px
+    p
+      text-align: center
+  [canvas-container]
+    overflow-y: scroll
+    overflow-x: hidden

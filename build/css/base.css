@@ -1,0 +1,21 @@
+body {
+  font-family: Tahoma,sans-serif, Arial;
+  font-size: 14px; }
+
+a {
+  text-decoration: none; }
+
+.clr {
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.content {
+  width: 1066px;
+  margin: 0 auto;
+  position: relative; }
+
