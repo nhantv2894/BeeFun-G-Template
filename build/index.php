@@ -17,6 +17,7 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/slidebars.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <!--LOADING-->
@@ -107,6 +108,51 @@
       -->
       <div class="slide"></div>
       <!--BAR_1-->
+      <div class="full-screen">
+        <ul class="bar-1">
+          <li class="bar-item">
+            <div class="box"><span class="img-box"></span>
+              <p>BOX 1</p>
+              <div class="clr"></div>
+            </div>
+          </li>
+          <li class="bar-item">
+            <div class="box"><span class="img-box"></span>
+              <p>BOX 2</p>
+              <div class="clr"></div>
+            </div>
+          </li>
+          <li class="bar-item">
+            <div class="box"><span class="img-box"></span>
+              <p>BOX 3</p>
+              <div class="clr"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="space space_1"></div>
+      <div class="full-screen">
+        <ul class="bar-1">
+          <li class="bar-item">
+            <div class="box"><span class="img-box"></span>
+              <p>BOX 1</p>
+              <div class="clr"></div>
+            </div>
+          </li>
+          <li class="bar-item">
+            <div class="box"><span class="img-box"></span>
+              <p>BOX 2</p>
+              <div class="clr"></div>
+            </div>
+          </li>
+          <li class="bar-item">
+            <div class="box"><span class="img-box"></span>
+              <p>BOX 3</p>
+              <div class="clr"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
       <!--BAR_2-->
       <!--BAR_3-->
       <!--BAR_4-->

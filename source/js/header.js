@@ -20,7 +20,7 @@ $( document ).ready(function() {
     //Enter icon hover
     $(".bottom").hover(function(){
         $(this).css("max-width","200px");
-        $("#enter").delay(500).fadeIn();
+        $("#enter").delay(500).fadeIn(100);
     }, function(){
         $(this).css("max-width","93px");
         $("#enter").hide();

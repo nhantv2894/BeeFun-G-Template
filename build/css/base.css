@@ -19,3 +19,21 @@ a {
   margin: 0 auto;
   position: relative; }
 
+.transform-03 {
+  /* Firefox */
+  -moz-transition: all .3s ease;
+  /* WebKit */
+  -webkit-transition: all .3s ease;
+  /* Opera */
+  -o-transition: all .3s ease;
+  /* Standard */
+  transition: all .3s ease; }
+
+.full-screen {
+  height: 100%;
+  display: block; }
+
+.space {
+  height: 85%;
+  display: block; }
+
