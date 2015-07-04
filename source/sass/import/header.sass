@@ -16,9 +16,10 @@
       float: left
       display: none
   input[type='button']
+    font-family: BeeFontSmooth
     position: relative
     top: 21px
-    padding: 10px 20px
+    padding: 0px 25px
     font-size: 2em
     height: 63px
     display: none
@@ -54,12 +55,13 @@
 
 #loader
   padding-top: 10%
-  h2
+  h2#loading-text
     position: relative
     width: 70%
     margin: 0 auto
     text-align: center
     top: -80px
+    font-family: BeeFontSmooth
     font-size: 2em
     font-weight: normal
     color: $yellow
@@ -246,6 +248,8 @@ input[type='text'].search
   background: #000000
   color: $yellow
   display: none
+  font-family: BeeFont
+  font-size: 20px
   &:focus
     border-top: none
     border-right: none

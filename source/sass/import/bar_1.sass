@@ -1,24 +1,26 @@
 @import "base"
 .back_ground_1
   /* Safari 4-5, Chrome 1-9 */
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c5c5c5), to(#f5f5f5))
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($darkyellow), to($yellow))
 
   /* Safari 5.1, Chrome 10+ */
-  background: -webkit-linear-gradient(top, #f5f5f5, #c5c5c5)
+  background: -webkit-linear-gradient(top, $yellow, $darkyellow)
 
   /* Firefox 3.6+ */
-  background: -moz-linear-gradient(top, #f5f5f5, #c5c5c5)
+  background: -moz-linear-gradient(top, $yellow, $darkyellow)
 
   /* IE 10 */
-  background: -ms-linear-gradient(top, #f5f5f5, #c5c5c5)
+  background: -ms-linear-gradient(top, $yellow, $darkyellow)
 
   /* Opera 11.10+ */
-  background: -o-linear-gradient(top, #f5f5f5, #c5c5c5)
-.bar_1
-  width: 80%
+  background: -o-linear-gradient(top, $yellow, $darkyellow)
+.bar-1
+  width: $cWidth
   position: relative
   margin: 0 auto
-  padding-top: 50px
+  padding-top: 10%
+  height: 100%
+  display: block
 .bar-item
   width: 33%
   float: left
@@ -36,7 +38,6 @@
     top: -50px
     @extend .back_ground_1
     border-radius: 10px
-    border: 1px solid #484848
   @extend .transform-03
   &:hover
     transform: scale(1.1,1.1)
@@ -44,10 +45,12 @@
     position: relative
     width: 120px
     height: 120px
-    @extend .back_ground_1
+    background: #ffffff
+    border: 5px solid $yellow
     border-radius: 70px
     display: block
     margin: 0 auto
     z-index: 999
 .space_1
-  background: url("../images/bg_space_1.jpg") no-repeat fixed center bottom
+  @extend .space
+  background: url("../images/bg_space_1.jpg") 50px center no-repeat fixed

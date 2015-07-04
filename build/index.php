@@ -30,7 +30,7 @@
         <div class="circle"></div>
         <div class="dot"></div>
         <div class="circle1"></div>
-        <h2>Loading</h2>
+        <h2 id="loading-text">Loading</h2>
       </div>
       <ul class="tab">
         <li id="1" class="tab1"><span class="yellow-b"></span></li>
@@ -108,55 +108,85 @@
       -->
       <div class="slide"></div>
       <!--BAR_1-->
-      <div class="full-screen">
-        <ul class="bar-1">
-          <li class="bar-item">
-            <div class="box"><span class="img-box"></span>
-              <p>BOX 1</p>
-              <div class="clr"></div>
-            </div>
-          </li>
-          <li class="bar-item">
-            <div class="box"><span class="img-box"></span>
-              <p>BOX 2</p>
-              <div class="clr"></div>
-            </div>
-          </li>
-          <li class="bar-item">
-            <div class="box"><span class="img-box"></span>
-              <p>BOX 3</p>
-              <div class="clr"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="space space_1"></div>
-      <div class="full-screen">
-        <ul class="bar-1">
-          <li class="bar-item">
-            <div class="box"><span class="img-box"></span>
-              <p>BOX 1</p>
-              <div class="clr"></div>
-            </div>
-          </li>
-          <li class="bar-item">
-            <div class="box"><span class="img-box"></span>
-              <p>BOX 2</p>
-              <div class="clr"></div>
-            </div>
-          </li>
-          <li class="bar-item">
-            <div class="box"><span class="img-box"></span>
-              <p>BOX 3</p>
-              <div class="clr"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <div class="full-screen white-bg"></div>
+      <ul class="bar-1">
+        <li class="bar-item">
+          <div class="box"><span class="img-box"></span>
+            <p>BOX 1</p>
+            <div class="clr"></div>
+          </div>
+        </li>
+        <li class="bar-item">
+          <div class="box"><span class="img-box"></span>
+            <p>BOX 2</p>
+            <div class="clr"></div>
+          </div>
+        </li>
+        <li class="bar-item">
+          <div class="box"><span class="img-box"></span>
+            <p>BOX 3</p>
+            <div class="clr"></div>
+          </div>
+        </li>
+        <li class="clr"></li>
+      </ul>
+      <div class="space_1"></div>
       <!--BAR_2-->
-      <!--BAR_3-->
-      <!--BAR_4-->
-      <!--BAR_5-->
+      <!--
+      Created by NhanTK on 04-Jul-15.
+      
+      -->
+      <div class="full-screen white-bg"></div>
+      <div class="bar-2">
+        <div class="content">
+          <div class="block-text right">
+            <h1>TITLE TOP</h1>
+            <p>
+              To alter a bounding box size,
+              insert the type I-beam cursor in the text so its blinking,
+              then hover your cursor over an edge of the bounding box.
+              The cursor will change to an arrow indicator letting you know you
+              can click-drag to resize the bounding box.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bar-3">
+        <div class="content">
+          <div class="block-text">
+            <h1>TITLE TOP</h1>
+            <p>
+              To alter a bounding box size,
+              insert the type I-beam cursor in the text so its blinking,
+              then hover your cursor over an edge of the bounding box.
+              The cursor will change to an arrow indicator letting you know you
+              can click-drag to resize the bounding box.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bar-4">
+        <div class="content">
+          <div class="block-text right">
+            <h1>TITLE TOP</h1>
+            <p>
+              To alter a bounding box size,
+              insert the type I-beam cursor in the text so its blinking,
+              then hover your cursor over an edge of the bounding box.
+              The cursor will change to an arrow indicator letting you know you
+              can click-drag to resize the bounding box.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="space_2"></div>
+      <!--ABOUTUS-->
+      <!--
+      Created by NhanTK on 04-Jul-15.
+      
+      -->
+      <div class="full-screen about"></div>
+      <!--FOOTER-->
     </div>
     <!--MENU RIGHT-->
     <!--Created by khoinh on 7/2/2015.

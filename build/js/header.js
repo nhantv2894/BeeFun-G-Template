@@ -8,7 +8,7 @@ $( document ).ready(function() {
             $(".content-loading").fadeOut();
         }
         else{
-            window.setTimeout( show_popup, 2000 );
+            window.setTimeout(show_popup);
         }
     });
     //Hover Tab
@@ -63,6 +63,7 @@ $( document ).ready(function() {
         // Toggle Slidebar
         controller.toggle( 'sb-1' );
     } );
+
 });
 
 function show_popup(){
