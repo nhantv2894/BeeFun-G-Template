@@ -23,7 +23,7 @@
     <!--LOADING-->
     <!--Created by khoinh on 7/2/2015.
     -->
-    <div id="res-menu"><i class="fa fa-bars fa-2x"></i></div>
+    <div id="res-menu"><i class="fa fa-bars fa-2x"></i></div><span id="to_top"></span>
     <!--Loading-->
     <div class="content-loading">
       <div id="loader">
@@ -33,10 +33,10 @@
         <h2 id="loading-text">Loading</h2>
       </div>
       <ul class="tab">
-        <li id="1" class="tab1"><span class="yellow-b"></span></li>
-        <li id="2" class="tab2"><span class="yellow-b"></span></li>
-        <li id="3" class="tab3"><span class="yellow-b"></span></li>
-        <li id="4" class="tab4"><span class="yellow-b"></span></li>
+        <li id="1" class="tab1"><span class="yellow-b"></span><img src="images/tab_1.png"></li>
+        <li id="2" class="tab2"><span class="yellow-b"></span><img src="images/tab_2.png"></li>
+        <li id="3" class="tab3"><span class="yellow-b"></span><img src="images/tab_3.png"></li>
+        <li id="4" class="tab4"><span class="yellow-b"></span><img src="images/tab_4.png"></li>
       </ul>
       <div class="clr"></div>
       <div class="bottom">
@@ -68,19 +68,19 @@
               <div class="r-top-bar left">
                 <nav><span class="menu-first"></span>
                   <ul class="menu left">
-                    <li class="li-active"><span class="spread"></span><a href="#">Home</a>
+                    <li class="li-active"><span class="spread"></span><a href="#" onmousedown="autoScrollTo('home_');" id="home">Home</a>
                       <div class="clr"></div>
                     </li>
-                    <li class="li-normal"><span class="spread"></span><a href="#">Feature</a>
+                    <li class="li-normal"><span class="spread"></span><a href="#" onmousedown="autoScrollTo('feature_');" id="feature">Feature</a>
                       <div class="clr"></div>
                     </li>
-                    <li class="li-normal"><span class="spread"></span><a href="#">Service</a>
+                    <li class="li-normal"><span class="spread"></span><a href="#" onmousedown="autoScrollTo('service_');" id="service">Service</a>
                       <div class="clr"></div>
                     </li>
-                    <li class="li-normal"><span class="spread"></span><a href="#">About us</a>
+                    <li class="li-normal"><span class="spread"></span><a href="#" onmousedown="autoScrollTo('aboutus_');" id="aboutus">About us</a>
                       <div class="clr"></div>
                     </li>
-                    <li class="li-normal"><span class="spread"></span><a href="#">Contact</a>
+                    <li class="li-normal"><span class="spread"></span><a href="#" onmousedown="autoScrollTo('contact_');" id="contact">Contact</a>
                       <div class="clr"></div>
                     </li>
                   </ul>
@@ -108,7 +108,9 @@
       -->
       <div class="slide"></div>
       <!--BAR_1-->
-      <div class="full-screen white-bg"></div>
+      <div id="feature_" class="full-screen white-bg">
+        <h3>FEATURE</h3><span class="arrDown"></span>
+      </div>
       <ul class="bar-1">
         <li class="bar-item">
           <div class="box"><span class="img-box"></span>
@@ -136,7 +138,9 @@
       Created by NhanTK on 04-Jul-15.
       
       -->
-      <div class="full-screen white-bg"></div>
+      <div id="service_" class="full-screen white-bg">
+        <h3>SERVICE</h3><span class="arrDown"></span>
+      </div>
       <div class="bar-2">
         <div class="content">
           <div class="block-text right">
@@ -185,8 +189,39 @@
       Created by NhanTK on 04-Jul-15.
       
       -->
+      <div id="aboutus_" class="full-screen white-bg">
+        <h3>ABOUT US</h3><span class="arrDown"></span>
+      </div>
       <div class="full-screen about"></div>
       <!--FOOTER-->
+      <!--
+      Created by NhanTK on 04-Jul-15.
+      
+      -->
+      <div class="space_3">
+        <div class="content"><img src="images/BeeTextLogo.jpg"></div>
+      </div>
+      <div class="space_4"></div>
+      <div id="contact_" class="full-screen white-bg">
+        <h3>CONTACT</h3><span class="arrDown"></span>
+      </div>
+      <div class="contact">
+        <div class="content">
+          <form id="contactfrm" method="get" action="">
+            <input id="name" file="text" name="name" minlength="2" type="text" placeholder="Your name...">
+            <input id="email" file="text" name="email" minlength="2" type="text" placeholder="Your email...">
+            <input id="phone" file="text" name="phone" minlength="2" type="text" placeholder="Your phone...">
+            <textarea id="comment" name comment required placeholder="Your comment..." rows="4" cols="50"></textarea>
+            <div class="submit">
+              <input type="submit" name="submit" value="Submit">
+              <input type="reset" name="reset" value="Reset">
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div class="content"></div>
+      </footer>
     </div>
     <!--MENU RIGHT-->
     <!--Created by khoinh on 7/2/2015.

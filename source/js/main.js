@@ -7,6 +7,8 @@ $( document ).ready(function() {
         slowBg_H($(".space_1"));
         //Space_2
         slowBg_V($(".space_2"));
+        //Space_4
+        slowBg_H($(".space_4"));
     });
 
 
@@ -18,7 +20,7 @@ function slowBg_V($this){
 }
 
 function slowBg_H($this){
-    var bgScroll = -(($(window).scrollTop() - $this.offset().top)/ 10) - 30;
+    var bgScroll = -(($(window).scrollTop() - $this.offset().top)/ 20) - 30;
     var bgPosition = bgScroll + 'px' + ' center';
     $this.css({ backgroundPosition: bgPosition });
 }

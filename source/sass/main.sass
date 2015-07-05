@@ -1,7 +1,109 @@
+$yellow: #fcd732
+$darkyellow: #fabc03
+$lBlack: #141414
+$cWidth: 1066px
+
+@font-face
+  font-family: "BeeFont"
+  src: url('../fonts/BeeFun.ttf') format('truetype')
+
+@font-face
+  font-family: "BeeFontSmooth"
+  src: url('../fonts/UVNThoidai2.ttf') format('truetype')
+
+@font-face
+  font-family: "BeeFontHeader"
+  src: url('../fonts/Super.ttf') format('truetype')
+
+body
+  font-family: Tahoma,sans-serif, Arial
+  font-size: 15px
+  background: #141414
+a
+  text-decoration: none
+.clr
+  clear: both
+
+.left
+  float: left
+
+.right
+  float: right
+
+.content
+  width: $cWidth
+  margin: 0 auto
+  position: relative
+
+.transform-03
+  /* Firefox */
+  -moz-transition: all .3s ease
+  /* WebKit */
+  -webkit-transition: all .3s ease
+  /* Opera */
+  -o-transition: all .3s ease
+  /* Standard */
+  transition: all .3s ease
+.full-screen
+  height: 100%
+  display: block
+  position: relative
+.white-bg
+  background-image: url("../images/bg.png")
+.space
+  height: 85%
+  display: block
+  position: relative
+
+@mixin vertical-align
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+h3
+  font-family: BeeFontHeader
+  font-size: 7em
+  margin: 0 auto
+  padding-top: 100px
+  text-align: center
+span.arrDown
+  background-image: url("../images/arrow-down.png")
+  display: block
+  width: 50px
+  height: 31px
+  margin: 0 auto
+  -moz-animation: light 1s infinite ease-in-out
+  -webkit-animation: light 1s infinite ease-in-out
+
+@-webkit-keyframes light
+  0%
+    text-shadow: 1px 1px 10px $yellow
+    opacity: 1
+
+  50%
+    opacity: .2
+
+  100%
+    text-shadow: 1px 1px 10px $yellow
+    opacity: .7
+
+@-moz-keyframes light
+  0%
+    text-shadow: 1px 1px 10px $yellow
+    opacity: 1
+
+  50%
+    opacity: .2
+
+  100%
+    text-shadow: 1px 1px 10px $yellow
+    opacity: .7
+
 @import "import/header"
 @import "import/slide"
 @import "import/bar_1"
 @import "import/bar_2"
 @import "import/footer"
-@import "import/responsive"
 @import "import/about"
+@import "import/responsive"
