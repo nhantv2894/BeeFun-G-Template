@@ -3,16 +3,16 @@
 .right-menu(off-canvas="sb-1 right reveal")
     .menu-content
         ul.menu
-            li.li-active
-                a(href='#', alt='Home') Home
             li.li-normal
-                a(href='#', alt='Home') Feature
+                a(href='#', onmousedown="autoScrollTo('home_');") Home
             li.li-normal
-                a(href='#', alt='Home') Service
+                a(href='#', onmousedown="autoScrollTo('feature_');") Feature
             li.li-normal
-                a(href='#', alt='Home') About us
+                a(href='#', onmousedown="autoScrollTo('service_');") Service
             li.li-normal
-                a(href='#', alt='Home') Contact
+                a(href='#', onmousedown="autoScrollTo('aboutus_');") About us
+            li.li-normal
+                a(href='#', onmousedown="autoScrollTo('contact_');") Contact
     .bottom-icon
         a(href='#')
             span#f-icon.right-icon

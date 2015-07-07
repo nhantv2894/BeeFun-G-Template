@@ -47,6 +47,7 @@
       </div>
     </div>
     <!--End Loading-->
+    <p id="test">123</p>
     <!--CANVAS-->
     <div canvas="container" class="close-any">
       <!--HEADER + MENU-->
@@ -68,7 +69,7 @@
               <div class="r-top-bar left">
                 <nav><span class="menu-first"></span>
                   <ul class="menu left">
-                    <li class="li-active"><span class="spread"></span><a href="#" onmousedown="autoScrollTo('home_');" id="home">Home</a>
+                    <li class="li-normal"><span class="spread"></span><a href="#" onmousedown="autoScrollTo('home_');" id="home">Home</a>
                       <div class="clr"></div>
                     </li>
                     <li class="li-normal"><span class="spread"></span><a href="#" onmousedown="autoScrollTo('feature_');" id="feature">Feature</a>
@@ -108,7 +109,7 @@
       -->
       <div class="slide"></div>
       <!--BAR_1-->
-      <div id="feature_" class="full-screen white-bg">
+      <div id="feature_" class="full-screen white-bg"><img src="images/BeeFeature.png" class="beeimg">
         <h3>FEATURE</h3><span class="arrDown"></span>
       </div>
       <ul class="bar-1">
@@ -138,12 +139,12 @@
       Created by NhanTK on 04-Jul-15.
       
       -->
-      <div id="service_" class="full-screen white-bg">
+      <div id="service_" class="full-screen white-bg"><img src="images/BeeService.png" class="beeimg">
         <h3>SERVICE</h3><span class="arrDown"></span>
       </div>
       <div class="bar-2">
         <div class="content">
-          <div class="block-text right">
+          <div id="blt_1" class="block-text right">
             <h1>TITLE TOP</h1>
             <p>
               To alter a bounding box size,
@@ -157,7 +158,7 @@
       </div>
       <div class="bar-3">
         <div class="content">
-          <div class="block-text">
+          <div id="blt_2" class="block-text">
             <h1>TITLE TOP</h1>
             <p>
               To alter a bounding box size,
@@ -171,7 +172,7 @@
       </div>
       <div class="bar-4">
         <div class="content">
-          <div class="block-text right">
+          <div id="blt_3" class="block-text right">
             <h1>TITLE TOP</h1>
             <p>
               To alter a bounding box size,
@@ -189,7 +190,7 @@
       Created by NhanTK on 04-Jul-15.
       
       -->
-      <div id="aboutus_" class="full-screen white-bg">
+      <div id="aboutus_" class="full-screen white-bg"><img src="images/BeeAbout.png" class="beeimg">
         <h3>ABOUT US</h3><span class="arrDown"></span>
       </div>
       <div class="full-screen about"></div>
@@ -202,7 +203,7 @@
         <div class="content"><img src="images/BeeTextLogo.jpg"></div>
       </div>
       <div class="space_4"></div>
-      <div id="contact_" class="full-screen white-bg">
+      <div id="contact_" class="full-screen white-bg"><img src="images/BeeContact.png" class="beeimg">
         <h3>CONTACT</h3><span class="arrDown"></span>
       </div>
       <div class="contact">
@@ -229,11 +230,11 @@
     <div off-canvas="sb-1 right reveal" class="right-menu">
       <div class="menu-content">
         <ul class="menu">
-          <li class="li-active"><a href="#" alt="Home">Home</a></li>
-          <li class="li-normal"><a href="#" alt="Home">Feature</a></li>
-          <li class="li-normal"><a href="#" alt="Home">Service</a></li>
-          <li class="li-normal"><a href="#" alt="Home">About us</a></li>
-          <li class="li-normal"><a href="#" alt="Home">Contact</a></li>
+          <li class="li-normal"><a href="#" onmousedown="autoScrollTo('home_');">Home</a></li>
+          <li class="li-normal"><a href="#" onmousedown="autoScrollTo('feature_');">Feature</a></li>
+          <li class="li-normal"><a href="#" onmousedown="autoScrollTo('service_');">Service</a></li>
+          <li class="li-normal"><a href="#" onmousedown="autoScrollTo('aboutus_');">About us</a></li>
+          <li class="li-normal"><a href="#" onmousedown="autoScrollTo('contact_');">Contact</a></li>
         </ul>
       </div>
       <div class="bottom-icon"><a href="#"><span id="f-icon" class="right-icon"></span></a><a href="#"><span id="g-icon" class="right-icon"></span></a><a href="#"><span id="t-icon" class="right-icon"></span></a><a href="#"><span id="z-icon" class="right-icon"></span></a>

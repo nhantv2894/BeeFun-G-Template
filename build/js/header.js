@@ -17,14 +17,6 @@ $( document ).ready(function() {
     }, function(){
         $(this).find("span").css("height","0%");
     });
-    //Enter icon hover
-    //$(".bottom").hover(function(){
-    //    $(this).css("max-width","200px");
-    //    $("#enter").delay(500).fadeIn(100);
-    //}, function(){
-    //    $(this).css("max-width","93px");
-    //    $("#enter").hide();
-    //});
     var iClick = false;
     $(".bottom").click(function(){
         if (iClick === false){
@@ -45,11 +37,13 @@ $( document ).ready(function() {
     });
 
     //Menu Effect
-    $(".menu li a").hover(function(){
-        $(".menu").find("li.li-active").removeClass().addClass("li-normal");
-        $(this).parent().removeClass();
-        $(this).parent().addClass("li-active");
-
+    $(".menu li").hover(
+        function(){
+            $(this).removeClass();
+            $(this).addClass("li-active");
+        }, function(){
+            $(this).removeClass();
+            $(this).addClass("li-normal");
     });
     //Search
     $("#s-icon").click(
