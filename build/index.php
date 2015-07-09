@@ -21,32 +21,7 @@
   </head>
   <body>
     <!--LOADING-->
-    <!--Created by khoinh on 7/2/2015.
-    -->
-    <div id="res-menu"><i class="fa fa-bars fa-2x"></i></div><span id="to_top"></span>
-    <!--Loading-->
-    <div class="content-loading">
-      <div id="loader">
-        <div class="circle"></div>
-        <div class="dot"></div>
-        <div class="circle1"></div>
-        <h2 id="loading-text">Loading</h2>
-      </div>
-      <ul class="tab">
-        <li id="1" class="tab1"><span class="yellow-b"></span><img src="images/tab_1.png"></li>
-        <li id="2" class="tab2"><span class="yellow-b"></span><img src="images/tab_2.png"></li>
-        <li id="3" class="tab3"><span class="yellow-b"></span><img src="images/tab_3.png"></li>
-        <li id="4" class="tab4"><span class="yellow-b"></span><img src="images/tab_4.png"></li>
-      </ul>
-      <div class="clr"></div>
-      <div class="bottom">
-        <div id="icon-enter"><img src="images/left-wellcome.png" class="left">
-          <input type="button" name="agreement" value="Enter" id="enter" class="left"><img src="images/right-wellcome.png" class="right">
-          <div class="clr"></div>
-        </div>
-      </div>
-    </div>
-    <!--End Loading-->
+    <!--include ./includes/loading.jade-->
     <p id="test">123</p>
     <!--CANVAS-->
     <div canvas="container" class="close-any">
@@ -57,12 +32,16 @@
           <div class="top-bar">
             <div class="content">
               <div class="up-bar">
-                <!--Left side-->
-                <div class="left-side">
-                  <p><i class="fa fa-phone"></i>0932 533 670<i class="fa fa-envelope-o"></i>beefun-team@gmail.com</p>
-                </div>
-                <!--Right side--><span id="img-up-bar" class="right"></span><a href="#"><span id="z-icon" class="right-icon"></span></a><a href="#"><span id="f-icon" class="right-icon"></span></a><a href="#"><span id="t-icon" class="right-icon"></span></a><a href="#"><span id="g-icon" class="right-icon"></span></a>
-                <p class="right">Follow us:</p>
+                <!--Right side--><span id="img-up-bar" class="right"></span>
+                <!--a(href='#')-->
+                <!--    span#z-icon.right-icon-->
+                <!--a(href='#')-->
+                <!--    span#f-icon.right-icon-->
+                <!--a(href='#')-->
+                <!--    span#t-icon.right-icon-->
+                <!--a(href='#')-->
+                <!--    span#g-icon.right-icon-->
+                <!--p.right Follow us:-->
                 <div class="clr"></div>
               </div>
               <div class="l-top-bar left"><img src="images/top-logo.png" alt="Top logo" id="logo"></div>
@@ -110,19 +89,19 @@
         <h3>FEATURE</h3><span class="arrDown"></span>
       </div>
       <ul class="bar-1">
-        <li class="bar-item">
+        <li id="b_1" class="bar-item">
           <div class="box"><span class="img-box"></span>
             <p>BOX 1</p>
             <div class="clr"></div>
           </div>
         </li>
-        <li class="bar-item">
+        <li id="b_2" class="bar-item">
           <div class="box"><span class="img-box"></span>
             <p>BOX 2</p>
             <div class="clr"></div>
           </div>
         </li>
-        <li class="bar-item">
+        <li id="b_3" class="bar-item">
           <div class="box"><span class="img-box"></span>
             <p>BOX 3</p>
             <div class="clr"></div>
@@ -218,7 +197,57 @@
         </div>
       </div>
       <footer>
-        <div class="content"></div>
+        <div class="content">
+          <div class="block-foot">
+            <div class="column-foot"></div>
+          </div>
+          <div class="block-foot">
+            <div class="column-foot-center">
+              <!--Left side-->
+              <div class="left-side">
+                <table>
+                  <tr>
+                    <td width="10%"><i class="fa fa-phone"></i></td>
+                    <td>
+                      <p>0932 533 670</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="10%"><i class="fa fa-envelope-o"></i></td>
+                    <td>
+                      <p>beefun-team@gmail.com</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="10%"><i class="fa fa-map-marker"></i></td>
+                    <td>
+                      <p>... Distric - Hai Chau Province - Da Nang City</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="block-foot">
+            <div class="column-foot">
+              <table>
+                <tr><a href="#feature_" class="link-foot">Feature |</a><a href="#service_" class="link-foot">Service |</a><a href="#aboutus_" class="link-foot">About us</a>
+                  <div class="clr"></div>
+                </tr>
+                <tr>
+                  <div class="icon-foot">
+                    <p class="left">Follow us:</p><a href="#"><span id="z-icon" class="right-icon"></span></a><a href="#"><span id="f-icon" class="right-icon"></span></a><a href="#"><span id="t-icon" class="right-icon"></span></a><a href="#"><span id="g-icon" class="right-icon"></span></a>
+                    <div class="clr"></div>
+                  </div>
+                </tr>
+                <tr>
+                  <p>Design by .<i>BeeFun-G</i>. Copyright @2015</p>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="clr"></div>
+        </div>
       </footer>
     </div>
     <!--MENU RIGHT-->
