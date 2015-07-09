@@ -61,17 +61,14 @@
                 <div class="left-side">
                   <p><i class="fa fa-phone"></i>0932 533 670<i class="fa fa-envelope-o"></i>beefun-team@gmail.com</p>
                 </div>
-                <!--Right side--><span id="img-up-bar" class="right"></span><a href="#"><span id="f-icon" class="right-icon"></span></a><a href="#"><span id="g-icon" class="right-icon"></span></a><a href="#"><span id="t-icon" class="right-icon"></span></a><a href="#"><span id="z-icon" class="right-icon"></span></a><a href="#"><span id="s-icon" class="right-icon"></span></a>
-                <input type="text" id="txt-search" placeholder="Type some text..." class="right search">
+                <!--Right side--><span id="img-up-bar" class="right"></span><a href="#"><span id="z-icon" class="right-icon"></span></a><a href="#"><span id="f-icon" class="right-icon"></span></a><a href="#"><span id="t-icon" class="right-icon"></span></a><a href="#"><span id="g-icon" class="right-icon"></span></a>
+                <p class="right">Follow us:</p>
                 <div class="clr"></div>
               </div>
               <div class="l-top-bar left"><img src="images/top-logo.png" alt="Top logo" id="logo"></div>
               <div class="r-top-bar left">
-                <nav><span class="menu-first"></span>
+                <nav id="horizonal-menu"><span class="menu-first"></span>
                   <ul class="menu left">
-                    <li class="li-normal"><span class="spread"></span><a href="#" onmousedown="autoScrollTo('home_');" id="home">Home</a>
-                      <div class="clr"></div>
-                    </li>
                     <li class="li-normal"><span class="spread"></span><a href="#" onmousedown="autoScrollTo('feature_');" id="feature">Feature</a>
                       <div class="clr"></div>
                     </li>

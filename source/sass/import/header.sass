@@ -226,10 +226,10 @@
   display: none
 .head-normal
   display: block
+  z-index: 9999999
 .top-bar
   width: 100%
   position: relative
-  background: $lBlack
   height: 100px
 .l-top-bar
   position: relative
@@ -240,9 +240,6 @@
   height: 40px
   background-color: #000000
   border-bottom: 3px solid $yellow
-.left-side
-  padding-left: 150px
-  float: left
   p
     color: #bbb
     font-size: 14px
@@ -250,23 +247,9 @@
     padding: 10px 5px
     i
       margin: 0px 10px
-input[type='text'].search
-  border-top: none
-  border-right: none
-  border-left: none
-  border-bottom: 1px solid $yellow
-  padding: 8px 5px 3px 5px
-  background: #000000
-  color: $yellow
-  display: none
-  font-family: BeeFont
-  font-size: 20px
-  &:focus
-    border-top: none
-    border-right: none
-    border-left: none
-    outline: none
-    border-bottom: 1px solid $yellow
+.left-side
+  padding-left: 150px
+  float: left
 #res-menu
   position: absolute
   top: 0px
@@ -282,7 +265,9 @@ input[type='text'].search
 span#img-up-bar
   @extend .span-block
   height: 43px
+  position: relative
   right: -30px
+  top: -2px
   width: 30px
   background: url("../images/up-bar.png") no-repeat left center
 
@@ -299,7 +284,7 @@ span.menu-first
   top: -61px
   li.li-normal
     @extend .span-block
-    width: 177px
+    width: 220px
     height: 58px
     float: left
     background-color: #000000
@@ -317,7 +302,6 @@ span.menu-first
       text-align: center
       font-size: 20px
       color: $yellow
-      margin-right: -12px
       padding-top: 15px
       @extend .transform-03
 
@@ -328,7 +312,7 @@ span.menu-first
 
   li.li-active
     @extend .span-block
-    width: 177px
+    width: 220px
     height: 58px
     float: left
     background-color: $yellow
