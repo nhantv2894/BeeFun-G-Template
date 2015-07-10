@@ -58,11 +58,22 @@
             <div class="content">
               <div class="up-bar">
                 <!--Left side-->
-                <div class="left-side">
-                  <p><i class="fa fa-phone"></i>0932 533 670<i class="fa fa-envelope-o"></i>beefun-team@gmail.com</p>
-                </div>
-                <!--Right side--><span id="img-up-bar" class="right"></span><a href="#"><span id="z-icon" class="right-icon"></span></a><a href="#"><span id="f-icon" class="right-icon"></span></a><a href="#"><span id="t-icon" class="right-icon"></span></a><a href="#"><span id="g-icon" class="right-icon"></span></a>
-                <p class="right">Follow us:</p>
+                <!--.left-side-->
+                <!--    p-->
+                <!--        i.fa.fa-phone-->
+                <!--        | 0932 533 670-->
+                <!--        i.fa.fa-envelope-o-->
+                <!--        | beefun-team@gmail.com-->
+                <!--//Right side--><span id="img-up-bar" class="right"></span>
+                <!--a(href='#')-->
+                <!--    span#z-icon.right-icon-->
+                <!--a(href='#')-->
+                <!--    span#f-icon.right-icon-->
+                <!--a(href='#')-->
+                <!--    span#t-icon.right-icon-->
+                <!--a(href='#')-->
+                <!--    span#g-icon.right-icon-->
+                <!--p.right Follow us:-->
                 <div class="clr"></div>
               </div>
               <div class="l-top-bar left"><img src="images/top-logo.png" alt="Top logo" id="logo"></div>
