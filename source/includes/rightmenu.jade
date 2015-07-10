@@ -4,15 +4,15 @@
     .menu-content
         ul.menu
             li.li-normal
-                a(href='#', onmousedown="autoScrollTo('home_');") Home
+                a(href='#', onmousedown="toTop();") Home
             li.li-normal
-                a(href='#', onmousedown="autoScrollTo('feature_');") Feature
+                a(href='#feature_') Feature
             li.li-normal
-                a(href='#', onmousedown="autoScrollTo('service_');") Service
+                a(href='#service_') Service
             li.li-normal
-                a(href='#', onmousedown="autoScrollTo('aboutus_');") About us
+                a(href='#aboutus_') About us
             li.li-normal
-                a(href='#', onmousedown="autoScrollTo('contact_');") Contact
+                a(href='#contact_') Contact
     .bottom-icon
         a(href='#')
             span#f-icon.right-icon
@@ -23,11 +23,22 @@
         a(href='#')
             span#z-icon.right-icon
         .clr
-    .left-side
-        p
-            i.fa.fa-phone
-            | 0932 533 670
-        p
-            i.fa.fa-envelope-o
-            | beefun-team@gmail.com
+    .block-foot
+        .column-foot
+            table
+                tr
+                    td(width="10%")
+                        i.fa.fa-phone
+                    td
+                        p 0932 533 670
+                tr
+                    td(width="10%")
+                        i.fa.fa-envelope-o
+                    td
+                        p beefun-team@gmail.com
+                tr
+                    td(width="10%")
+                        i.fa.fa-map-marker
+                    td
+                        p ... Distric - Hai Chau Province - Da Nang City
     //END HEADER Respondsive

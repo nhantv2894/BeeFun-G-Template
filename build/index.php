@@ -5,6 +5,7 @@
   <head>
     <title>BeeFun</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!--CSS-->
     <link rel="stylesheet" href="css/reset.css">
     <!-- Main css-->
@@ -21,8 +22,33 @@
   </head>
   <body>
     <!--LOADING-->
-    <!--include ./includes/loading.jade-->
-    <p id="test">123</p>
+    <!--Created by khoinh on 7/2/2015.
+    -->
+    <div id="res-menu"><i class="fa fa-bars fa-2x"></i></div><span id="to_top"></span>
+    <!--Loading-->
+    <div class="content-loading">
+      <div id="loader">
+        <div class="circle"></div>
+        <div class="dot"></div>
+        <div class="circle1"></div>
+        <h2 id="loading-text">Loading</h2>
+      </div>
+      <ul class="tab">
+        <li id="1" class="tab1"><span class="yellow-b"></span><img src="images/tab_1.png"></li>
+        <li id="2" class="tab2"><span class="yellow-b"></span><img src="images/tab_2.png"></li>
+        <li id="3" class="tab3"><span class="yellow-b"></span><img src="images/tab_3.png"></li>
+        <li id="4" class="tab4"><span class="yellow-b"></span><img src="images/tab_4.png"></li>
+      </ul>
+      <div class="clr"></div>
+      <div class="bottom">
+        <div id="icon-enter"><img src="images/left-wellcome.png" class="left">
+          <input type="button" name="agreement" value="Enter" id="enter" class="left"><img src="images/right-wellcome.png" class="right">
+          <div class="clr"></div>
+        </div>
+      </div>
+    </div>
+    <!--End Loading-->
+    <!--p#test 123-->
     <!--CANVAS-->
     <div canvas="container" class="close-any">
       <!--HEADER + MENU-->
@@ -31,33 +57,12 @@
         <header>
           <div class="top-bar">
             <div class="content">
-              <div class="up-bar">
-<<<<<<< HEAD
-                <!--Left side-->
-                <!--.left-side-->
-                <!--    p-->
-                <!--        i.fa.fa-phone-->
-                <!--        | 0932 533 670-->
-                <!--        i.fa.fa-envelope-o-->
-                <!--        | beefun-team@gmail.com-->
-                <!--//Right side--><span id="img-up-bar" class="right"></span>
-=======
-                <!--Right side--><span id="img-up-bar" class="right"></span>
->>>>>>> a8d42653ee3aa38c90d979ef6bc6a608b63c485c
-                <!--a(href='#')-->
-                <!--    span#z-icon.right-icon-->
-                <!--a(href='#')-->
-                <!--    span#f-icon.right-icon-->
-                <!--a(href='#')-->
-                <!--    span#t-icon.right-icon-->
-                <!--a(href='#')-->
-                <!--    span#g-icon.right-icon-->
-                <!--p.right Follow us:-->
+              <div class="up-bar"><span id="img-up-bar" class="right"></span>
                 <div class="clr"></div>
               </div>
               <div class="l-top-bar left"><img src="images/top-logo.png" alt="Top logo" id="logo"></div>
               <div class="r-top-bar left">
-                <nav id="horizonal-menu"><span class="menu-first"></span>
+                <nav id="horizonal-menu">
                   <ul class="menu left">
                     <li class="li-normal"><span class="spread"></span><a href="#" onmousedown="autoScrollTo('feature_');" id="feature">Feature</a>
                       <div class="clr"></div>
@@ -85,7 +90,7 @@
         <header>
           <div class="top-bar">
             <div class="up-bar"></div>
-            <div class="l-top-bar"><img src="images/top-logo.png" alt="Top logo" id="logo"></div>
+            <div class="l-top-bar"><img src="images/NewLogo.png" alt="Top logo" id="logo"></div>
           </div>
         </header>
       </div>
@@ -131,7 +136,7 @@
       </div>
       <div class="bar-2">
         <div class="content">
-          <div id="blt_1" class="block-text right">
+          <div id="blt_1" class="block-text">
             <h1>TITLE TOP</h1>
             <p>
               To alter a bounding box size,
@@ -159,7 +164,7 @@
       </div>
       <div class="bar-4">
         <div class="content">
-          <div id="blt_3" class="block-text right">
+          <div id="blt_3" class="block-text">
             <h1>TITLE TOP</h1>
             <p>
               To alter a bounding box size,
@@ -210,7 +215,7 @@
       <footer>
         <div class="content">
           <div class="block-foot">
-            <div class="column-foot"></div>
+            <div class="column-foot"><img src="images/text_foot.png"></div>
           </div>
           <div class="block-foot">
             <div class="column-foot-center">
@@ -267,19 +272,39 @@
     <div off-canvas="sb-1 right reveal" class="right-menu">
       <div class="menu-content">
         <ul class="menu">
-          <li class="li-normal"><a href="#" onmousedown="autoScrollTo('home_');">Home</a></li>
-          <li class="li-normal"><a href="#" onmousedown="autoScrollTo('feature_');">Feature</a></li>
-          <li class="li-normal"><a href="#" onmousedown="autoScrollTo('service_');">Service</a></li>
-          <li class="li-normal"><a href="#" onmousedown="autoScrollTo('aboutus_');">About us</a></li>
-          <li class="li-normal"><a href="#" onmousedown="autoScrollTo('contact_');">Contact</a></li>
+          <li class="li-normal"><a href="#" onmousedown="toTop();">Home</a></li>
+          <li class="li-normal"><a href="#feature_">Feature</a></li>
+          <li class="li-normal"><a href="#service_">Service</a></li>
+          <li class="li-normal"><a href="#aboutus_">About us</a></li>
+          <li class="li-normal"><a href="#contact_">Contact</a></li>
         </ul>
       </div>
       <div class="bottom-icon"><a href="#"><span id="f-icon" class="right-icon"></span></a><a href="#"><span id="g-icon" class="right-icon"></span></a><a href="#"><span id="t-icon" class="right-icon"></span></a><a href="#"><span id="z-icon" class="right-icon"></span></a>
         <div class="clr"></div>
       </div>
-      <div class="left-side">
-        <p><i class="fa fa-phone"></i>0932 533 670</p>
-        <p><i class="fa fa-envelope-o"></i>beefun-team@gmail.com</p>
+      <div class="block-foot">
+        <div class="column-foot">
+          <table>
+            <tr>
+              <td width="10%"><i class="fa fa-phone"></i></td>
+              <td>
+                <p>0932 533 670</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="10%"><i class="fa fa-envelope-o"></i></td>
+              <td>
+                <p>beefun-team@gmail.com</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="10%"><i class="fa fa-map-marker"></i></td>
+              <td>
+                <p>... Distric - Hai Chau Province - Da Nang City</p>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
       <!--END HEADER Respondsive-->
     </div>

@@ -4,7 +4,7 @@
 $( document ).ready(function() {
     //Loading
     $(window).load(function(){
-        if ($(this).width() <= 768){
+        if ($(this).width() <= 800){
             $(".content-loading").fadeOut();
         }
         else{

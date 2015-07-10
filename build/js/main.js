@@ -59,3 +59,6 @@ function slowBg_H($this){
     var bgPosition = bgScroll + 'px' + ' center';
     $this.css({ backgroundPosition: bgPosition });
 }
+function toTop(){
+    $(".close-any").animate({ scrollTop: 0 }, 2000);
+}

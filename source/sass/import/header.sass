@@ -230,14 +230,19 @@
 .top-bar
   width: 100%
   position: relative
-  height: 100px
+  height: 70px
 .l-top-bar
+  position: absolute
+  top: 0px
+  left: -10px
+  z-index: 999999
+.r-top-bar
   position: relative
-  top: -45px
+  left: -14px
 .up-bar
   display: block
   width: 100%
-  height: 40px
+  height: 15px
   background-color: #000000
   border-bottom: 3px solid $yellow
   p
@@ -264,7 +269,7 @@ span#img-up-bar
   height: 43px
   position: relative
   right: -30px
-  top: -2px
+  top: -26px
   width: 30px
   background: url("../images/up-bar.png") no-repeat left center
 
@@ -278,10 +283,10 @@ span.menu-first
 //******* Menu
 .menu
   position: relative
-  top: -61px
+  left: 152px
   li.li-normal
     @extend .span-block
-    width: 220px
+    width: 226px
     height: 58px
     float: left
     background-color: #000000
@@ -297,7 +302,7 @@ span.menu-first
       display: block
       float: right
       text-align: center
-      font-size: 20px
+      font-size: 24px
       color: $yellow
       padding-top: 15px
       @extend .transform-03
@@ -309,7 +314,7 @@ span.menu-first
 
   li.li-active
     @extend .span-block
-    width: 220px
+    width: 226px
     height: 58px
     float: left
     background-color: $yellow
@@ -318,7 +323,7 @@ span.menu-first
       display: block
       float: right
       text-align: center
-      font-size: 20px
+      font-size: 24px
       color: #000000
       margin-right: -12px
       padding-top: 15px
@@ -354,9 +359,9 @@ span.menu-first
     position: relative
   .bottom-icon
     position: relative
-    width: 150px
+    width: 140px
     margin: 0 auto
-    padding-top: 30px
+    padding: 20px 0px
 
 #f-icon
   background: url("../images/icon-Right.png") no-repeat 0px -31px
