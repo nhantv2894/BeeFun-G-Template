@@ -99,7 +99,29 @@
       Created by NhanTK on 01-Jul-15.
       
       -->
-      <div class="slide"></div>
+      <div class="slide">
+        <div class="content">
+          <div id="banner-slide">
+            <ul class="slide-content">
+              <li style="background: red;" class="slide-image focus">
+                <p>Pic 1</p>
+                <!--img(src="images/bg_space_1.jpg" title="Automatically generated caption")-->
+              </li>
+              <li style="background: blue;" class="slide-image">
+                <p>Pic 2</p>
+                <!--img(src="images/bg_space_2.jpg" title="Automatically generated caption")-->
+              </li>
+              <li style="background: yellow;" class="slide-image">
+                <p>Pic 3</p>
+                <!--img(src="images/bg_space_4.jpg" title="Automatically generated caption")-->
+              </li>
+            </ul>
+            <div class="slide-pager">
+              <ul class="pager-container"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <!--BAR_1-->
       <div id="feature_" class="full-screen white-bg"><img src="images/BeeFeature.png" class="beeimg">
         <h3>FEATURE</h3><span class="arrDown"></span>

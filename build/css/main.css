@@ -33,6 +33,7 @@ a {
 
 .content {
   width: 1066px;
+  height: 100%;
   margin: 0 auto;
   position: relative; }
 
@@ -82,7 +83,7 @@ h3 {
   font-family: BeeFontHeader;
   font-size: 7em;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 50px;
   text-align: center; }
 
 span.arrDown {
@@ -343,13 +344,13 @@ img.beeimg {
   display: none; }
 
 .head-normal {
-  display: block;
-  z-index: 9999999; }
+  display: block; }
 
 .top-bar {
   width: 100%;
   position: relative;
-  height: 70px; }
+  height: 80px;
+  z-index: 9999999; }
 
 .l-top-bar {
   position: absolute;
@@ -424,7 +425,6 @@ span.menu-first, .menu li.li-normal span.spread {
       color: #fcd732;
       padding-top: 15px; }
     .menu li.li-normal:hover a {
-      margin-right: -16px;
       transform: scale(1.3, 1.3); }
   .menu li.li-active {
     width: 226px;
@@ -438,7 +438,6 @@ span.menu-first, .menu li.li-normal span.spread {
       text-align: center;
       font-size: 24px;
       color: #000000;
-      margin-right: -12px;
       padding-top: 15px; }
     .menu li.li-active span {
       height: 60px;
@@ -526,10 +525,49 @@ span#to_top {
   background: url("../images/bg_slide.jpg") center 0 no-repeat fixed;
   height: 100%;
   display: block;
-  margin-top: -100px; }
-  .slide img {
-    max-width: 80%;
-    margin: 20% auto; }
+  margin-top: -90px; }
+  .slide #banner-slide {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%; }
+    .slide #banner-slide ul.slide-content {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      width: 100%;
+      height: 70%;
+      background: #bbb; }
+      .slide #banner-slide ul.slide-content li.slide-image {
+        position: absolute;
+        height: 100%;
+        display: none;
+        width: 100%;
+        opacity: 0; }
+        .slide #banner-slide ul.slide-content li.slide-image img {
+          max-height: 100%; }
+    .slide #banner-slide .slide-pager {
+      height: 20px;
+      position: relative; }
+      .slide #banner-slide .slide-pager ul {
+        float: right;
+        margin: 10px 0 0;
+        padding: 0;
+        width: auto; }
+    .slide #banner-slide .focus {
+      background: green; }
+
+.slide-pager-slot {
+  background: none repeat scroll 0 0 #999999;
+  display: block;
+  float: left;
+  height: 15px;
+  list-style: none outside none;
+  margin: 0 5px 0 0;
+  width: 15px;
+  cursor: pointer; }
+  .slide-pager-slot:hover {
+    background: red; }
 
 .back_ground_1, .box p {
   /* Safari 4-5, Chrome 1-9 */
@@ -756,7 +794,7 @@ footer {
   .up-bar {
     height: 50px; }
   .top-bar {
-    height: 50px; }
+    height: 58px; }
   .l-top-bar {
     width: 100%;
     left: 0px; }
